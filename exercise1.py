@@ -17,7 +17,7 @@ def pos_to_state(row, col): return row * 12 + col
 def get_tile(r, c):
     if 0 <= r < 12 and 0 <= c < 12:
         return raw_map[r][c]
-    return "W"  # W 代表 Wall 墙
+    return "W"  # w represents wall
 
 
 MOVES = {0: (0, -1), 1: (1, 0), 2: (0, 1), 3: (-1, 0)}
